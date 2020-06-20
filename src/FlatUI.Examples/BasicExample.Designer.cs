@@ -29,6 +29,8 @@
 		private void InitializeComponent()
 		{
             this.formSkin1 = new FlatUI.FormSkin();
+            this.flatTextBox1 = new FlatUI.FlatTextBox();
+            this.flatComboBox1 = new FlatUI.FlatComboBox();
             this.flatStickyButton1 = new FlatUI.FlatStickyButton();
             this.flatToggle3 = new FlatUI.FlatToggle();
             this.flatToggle2 = new FlatUI.FlatToggle();
@@ -60,6 +62,8 @@
             this.formSkin1.BackColor = System.Drawing.Color.White;
             this.formSkin1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(30)))), ((int)(((byte)(59)))));
             this.formSkin1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(58)))), ((int)(((byte)(60)))));
+            this.formSkin1.Controls.Add(this.flatTextBox1);
+            this.formSkin1.Controls.Add(this.flatComboBox1);
             this.formSkin1.Controls.Add(this.flatStickyButton1);
             this.formSkin1.Controls.Add(this.flatToggle3);
             this.formSkin1.Controls.Add(this.flatToggle2);
@@ -89,13 +93,50 @@
             this.formSkin1.TabIndex = 0;
             this.formSkin1.Text = "Flat UI Midnight";
             // 
+            // flatTextBox1
+            // 
+            this.flatTextBox1.BackColor = System.Drawing.Color.Transparent;
+            this.flatTextBox1.FocusOnHover = false;
+            this.flatTextBox1.Location = new System.Drawing.Point(426, 334);
+            this.flatTextBox1.MaxLength = 32767;
+            this.flatTextBox1.Multiline = false;
+            this.flatTextBox1.Name = "flatTextBox1";
+            this.flatTextBox1.ReadOnly = false;
+            this.flatTextBox1.Size = new System.Drawing.Size(270, 28);
+            this.flatTextBox1.TabIndex = 19;
+            this.flatTextBox1.Text = "flatTextBox1";
+            this.flatTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.flatTextBox1.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.flatTextBox1.UseSystemPasswordChar = false;
+            // 
+            // flatComboBox1
+            // 
+            this.flatComboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(34)))), ((int)(((byte)(65)))));
+            this.flatComboBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.flatComboBox1.DisplayMember = "1";
+            this.flatComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.flatComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.flatComboBox1.Font = new System.Drawing.Font("Tahoma", 8F);
+            this.flatComboBox1.ForeColor = System.Drawing.Color.White;
+            this.flatComboBox1.FormattingEnabled = true;
+            this.flatComboBox1.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(96)))), ((int)(((byte)(253)))));
+            this.flatComboBox1.ItemHeight = 16;
+            this.flatComboBox1.Items.AddRange(new object[] {
+            "Test",
+            "Test"});
+            this.flatComboBox1.Location = new System.Drawing.Point(575, 271);
+            this.flatComboBox1.Name = "flatComboBox1";
+            this.flatComboBox1.Size = new System.Drawing.Size(121, 22);
+            this.flatComboBox1.TabIndex = 18;
+            this.flatComboBox1.ValueMember = "1";
+            // 
             // flatStickyButton1
             // 
             this.flatStickyButton1.BackColor = System.Drawing.Color.Transparent;
             this.flatStickyButton1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(96)))), ((int)(((byte)(253)))));
             this.flatStickyButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.flatStickyButton1.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.flatStickyButton1.Location = new System.Drawing.Point(494, 270);
+            this.flatStickyButton1.Location = new System.Drawing.Point(416, 267);
             this.flatStickyButton1.Name = "flatStickyButton1";
             this.flatStickyButton1.Rounded = false;
             this.flatStickyButton1.Size = new System.Drawing.Size(113, 32);
@@ -411,6 +452,8 @@
         private FlatToggle flatToggle2;
         private FlatToggle flatToggle3;
         private FlatStickyButton flatStickyButton1;
+        private FlatTextBox flatTextBox1;
+        private FlatComboBox flatComboBox1;
     }
 }
 
