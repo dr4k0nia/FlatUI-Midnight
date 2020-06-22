@@ -1,7 +1,7 @@
 FlatUI Midnight
 ======
 
-![Example](https://i.imgur.com/SDQvcTs.png)
+![Example](https://i.imgur.com/9oF68A6.png)
 
 FlatUI Midnight is a modified version of the [C# FlatUI port](https://github.com/saneki-discontinued/FlatUI)
 The color scheme was modified aswell as some of the Controls.
