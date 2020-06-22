@@ -103,7 +103,7 @@ namespace FlatUI
 
         private readonly Color _BaseColor = Color.FromArgb( 24, 22, 43 );
         private Color _BorderColor = Helpers.FlatColor;
-        private readonly Color _TextColor = Color.FromArgb( 255, 252, 255 );
+        private readonly Color _TextColor = Helpers.FlatWhite;
 
         public FlatRadioButton()
         {

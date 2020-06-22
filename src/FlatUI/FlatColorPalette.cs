@@ -44,7 +44,7 @@ namespace FlatUI
         public Color Gray { get; set; } = Color.FromArgb( 63, 70, 73 );
 
         [Category( "Colors" )]
-        public Color White { get; set; } = Color.FromArgb( 255, 252, 255 );
+        public Color White { get; set; } = Helpers.FlatWhite;
 
         public FlatColorPalette()
         {

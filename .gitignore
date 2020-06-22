@@ -3,3 +3,7 @@
 ################################################################################
 
 /bin
+/src/FlatUI/obj
+/src/FlatUI.Examples/obj
+/.idea/.idea.FlatUI/.idea
+/.vs/FlatUI/v16

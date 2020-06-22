@@ -65,7 +65,7 @@ namespace FlatUI
         public Color BaseColor { get; set; } = Helpers.FlatColor;
 
         [Category( "Colors" )]
-        public Color TextColor { get; set; } = Color.FromArgb( 255, 252, 255 );
+        public Color TextColor { get; set; } = Helpers.FlatWhite;
 
         [Category( "Options" )]
         public bool Rounded { get; set; } = false;

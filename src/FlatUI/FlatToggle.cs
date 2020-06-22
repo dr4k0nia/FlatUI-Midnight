@@ -81,10 +81,10 @@ namespace FlatUI
         }
 
         private Color BaseColor = Helpers.FlatColor;
-        private readonly Color BaseColorRed = Color.FromArgb( 220, 85, 96 );
-        private readonly Color BGColor = Color.FromArgb( 233, 95, 98 );
-        private readonly Color ToggleColor = Color.FromArgb( 24, 22, 43 );
-        private readonly Color TextColor = Color.FromArgb( 255, 252, 255 );
+        private readonly Color BaseColorRed = Color.FromArgb( 220, 85, 96 ); //Red
+        private readonly Color BGColor = Color.FromArgb( 233, 95, 98 ); //Red
+        private readonly Color ToggleColor = Color.FromArgb( 24, 22, 43 ); //Dark
+        private readonly Color TextColor = Helpers.FlatWhite;
 
         public FlatToggle()
         {
@@ -111,7 +111,7 @@ namespace FlatUI
             var GP = new GraphicsPath();
             var GP2 = new GraphicsPath();
             var Base = new Rectangle( 0, 0, W, H );
-            var Toggle = new Rectangle( Convert.ToInt32( W / 2 ), 0, 38, H );
+            var Toggle = new Rectangle( Convert.ToInt32( W / 2 ), 0, 39, H );
 
             var _with9 = G;
             _with9.SmoothingMode = SmoothingMode.HighQuality;
@@ -124,7 +124,7 @@ namespace FlatUI
                 case _Options.Style1:
                     //-- Style 1
                     //-- Base
-                    GP = Helpers.RoundRec( Base, 6 );
+                    GP = Helpers.RoundRec( Base, 7 );
                     GP2 = Helpers.RoundRec( Toggle, 6 );
                     _with9.FillPath( new SolidBrush( BGColor ), GP );
                     _with9.FillPath( new SolidBrush( ToggleColor ), GP2 );
@@ -136,8 +136,8 @@ namespace FlatUI
                     if ( Checked )
                     {
                         //-- Base
-                        GP = Helpers.RoundRec( Base, 6 );
-                        GP2 = Helpers.RoundRec( new Rectangle( Convert.ToInt32( W / 2 + 1 ), 0, 38, H + 1 ), 6 );
+                        GP = Helpers.RoundRec( new Rectangle( -1, 0, W, H ), 6 );
+                        GP2 = Helpers.RoundRec( new Rectangle( Convert.ToInt32( W / 2 ), 0, 39, H + 1 ), 6 );
                         _with9.FillPath( new SolidBrush( ToggleColor ), GP );
                         _with9.FillPath( new SolidBrush( BaseColor ), GP2 );
 
@@ -147,6 +147,7 @@ namespace FlatUI
                     }
 
                     break;
+
                 case _Options.Style2:
                     //-- Style 2
                     //-- Base
@@ -187,6 +188,7 @@ namespace FlatUI
                     }
 
                     break;
+
                 case _Options.Style3:
                     //-- Style 3
                     //-- Base

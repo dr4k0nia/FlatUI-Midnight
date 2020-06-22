@@ -32,7 +32,6 @@
             this.flatTextBox1 = new FlatUI.FlatTextBox();
             this.flatComboBox1 = new FlatUI.FlatComboBox();
             this.flatStickyButton1 = new FlatUI.FlatStickyButton();
-            this.flatToggle3 = new FlatUI.FlatToggle();
             this.flatToggle2 = new FlatUI.FlatToggle();
             this.flatToggle1 = new FlatUI.FlatToggle();
             this.flatRadioButton2 = new FlatUI.FlatRadioButton();
@@ -52,6 +51,7 @@
             this.flatLabel2 = new FlatUI.FlatLabel();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.FlatLabel1 = new FlatUI.FlatLabel();
+            this.flatToggle3 = new FlatUI.FlatToggle();
             this.formSkin1.SuspendLayout();
             this.flatTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -62,10 +62,10 @@
             this.formSkin1.BackColor = System.Drawing.Color.White;
             this.formSkin1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(30)))), ((int)(((byte)(59)))));
             this.formSkin1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(58)))), ((int)(((byte)(60)))));
+            this.formSkin1.Controls.Add(this.flatToggle3);
             this.formSkin1.Controls.Add(this.flatTextBox1);
             this.formSkin1.Controls.Add(this.flatComboBox1);
             this.formSkin1.Controls.Add(this.flatStickyButton1);
-            this.formSkin1.Controls.Add(this.flatToggle3);
             this.formSkin1.Controls.Add(this.flatToggle2);
             this.formSkin1.Controls.Add(this.flatToggle1);
             this.formSkin1.Controls.Add(this.flatRadioButton2);
@@ -86,7 +86,7 @@
             this.formSkin1.FlatColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(96)))), ((int)(((byte)(253)))));
             this.formSkin1.Font = new System.Drawing.Font("Tahoma", 12F);
             this.formSkin1.HeaderColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(22)))), ((int)(((byte)(43)))));
-            this.formSkin1.HeaderMaximize = false;
+            this.formSkin1.HeaderMaximize = true;
             this.formSkin1.Location = new System.Drawing.Point(0, 0);
             this.formSkin1.Name = "formSkin1";
             this.formSkin1.Size = new System.Drawing.Size(730, 400);
@@ -143,19 +143,6 @@
             this.flatStickyButton1.TabIndex = 17;
             this.flatStickyButton1.Text = "Sticky Button";
             this.flatStickyButton1.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(252)))), ((int)(((byte)(255)))));
-            // 
-            // flatToggle3
-            // 
-            this.flatToggle3.BackColor = System.Drawing.Color.Transparent;
-            this.flatToggle3.Checked = true;
-            this.flatToggle3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.flatToggle3.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.flatToggle3.Location = new System.Drawing.Point(402, 201);
-            this.flatToggle3.Name = "flatToggle3";
-            this.flatToggle3.Options = FlatUI.FlatToggle._Options.Style1;
-            this.flatToggle3.Size = new System.Drawing.Size(76, 33);
-            this.flatToggle3.TabIndex = 16;
-            this.flatToggle3.Text = "flatToggle3";
             // 
             // flatToggle2
             // 
@@ -409,6 +396,19 @@
             this.FlatLabel1.TabIndex = 0;
             this.FlatLabel1.Text = "This is an example program using FlatUI Midnight";
             // 
+            // flatToggle3
+            // 
+            this.flatToggle3.BackColor = System.Drawing.Color.Transparent;
+            this.flatToggle3.Checked = false;
+            this.flatToggle3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.flatToggle3.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.flatToggle3.Location = new System.Drawing.Point(416, 201);
+            this.flatToggle3.Name = "flatToggle3";
+            this.flatToggle3.Options = FlatUI.FlatToggle._Options.Style1;
+            this.flatToggle3.Size = new System.Drawing.Size(76, 33);
+            this.flatToggle3.TabIndex = 20;
+            this.flatToggle3.Text = "flatToggle3";
+            // 
             // BasicExample
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -450,10 +450,10 @@
         private FlatRadioButton flatRadioButton1;
         private FlatToggle flatToggle1;
         private FlatToggle flatToggle2;
-        private FlatToggle flatToggle3;
         private FlatStickyButton flatStickyButton1;
         private FlatTextBox flatTextBox1;
         private FlatComboBox flatComboBox1;
+        private FlatToggle flatToggle3;
     }
 }
 
